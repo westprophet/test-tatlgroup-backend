@@ -1,0 +1,7 @@
+{
+    "connectionLimit" : 20,
+    "host": "localhost",
+    "user": "test-tatlgroup",
+    "password": "pkOMWGy4JsAnSJwd",
+    "database": "test-tatlgroup"
+}
