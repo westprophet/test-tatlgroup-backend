@@ -11,6 +11,7 @@ exports.findAll = (req, res) => {
         // я оставлю заголовки, получаемые с сервера, в таком виде, но конечно в реальном продакшене лучше переписать под конкретный origin
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
+
         res.send({
             Items: data.map((i)=>(
                 {

@@ -1,3 +1,4 @@
-[submodule "frontend/src/main"]
-	path = frontend/src/main
+
+[submodule "frontend/src/test-tatlgroup-frontend"]
+	path = frontend/src/test-tatlgroup-frontend
 	url = https://github.com/westprophet/test-tatlgroup-frontend.git

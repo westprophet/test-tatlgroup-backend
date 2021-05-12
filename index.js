@@ -7,12 +7,15 @@ const app = express()
 const port = 3049;
 
 
-
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+const PUBLIC_PATH = __dirname + '/frontend/pages/main';
+app.use(express.static(PUBLIC_PATH));
+
 app.get("/", (req, res) => {
-    res.send("Приложение")
+    res.sendFile(PUBLIC_PATH + '/main/index.html');
 });
 
 require("./backend/routes/v1/rate.routes.js")(app);
