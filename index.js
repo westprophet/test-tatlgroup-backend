@@ -1,15 +1,16 @@
 // const { getSchoolboys } = require('./models/schoolboysModel');
-const models = require('./backend/models');
+const cors = require('cors')
 const express = require('express');
 const bodyParser = require("body-parser");
 
 const app = express()
-const port = 3049
+const port = 3049;
 
 
+
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.get("/", (req, res) => {
     res.send("Приложение")
 });

@@ -14,10 +14,11 @@ rate.findAll = async (result, class_id=0, schoolboy_id) => {
         result(null, res);
     });
 }
+//Тут нет смысла передавать title параметр. Но в задаче сказано передавать.
 rate.add = async (result, class_id, title='H', schoolboy_id, column_id) => {
     sql.query({
         sql: 'INSERT INTO `rate` (title,column_id, schoolboy_id, class_id) VALUES(?,?,?,?);',
-        values: [title, schoolboy_id, column_id, class_id],
+        values: [title, column_id, schoolboy_id, class_id],
     }, (err, res) => {
         if (err) {
             console.log("error: ", err);

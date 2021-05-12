@@ -15,7 +15,7 @@ exports.findAll = (req, res) => {
             Items: data.map((i)=>(
                 {
                     Id: i.id,
-                    FirstName: i.firstname,
+                    FirstName: i.name,
                     SecondName: i.secondname,
                     LastName: i.lastname,
                 }

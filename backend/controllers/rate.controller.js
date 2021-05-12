@@ -38,9 +38,7 @@ exports.add = (req, res) => {
         // я оставлю заголовки, получаемые с сервера, в таком виде, но конечно в реальном продакшене лучше переписать под конкретный origin
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
-        res.send({
-            success: status
-        })
+        res.status(200).send();
     }, req.params.class_id, req.body.Title, req.body.SchoolboyId, req.body.ColumnId);//Параметры запроса
 };
 
@@ -57,8 +55,6 @@ exports.delete = (req, res) => {
         // я оставлю заголовки, получаемые с сервера, в таком виде, но конечно в реальном продакшене лучше переписать под конкретный origin
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
-        res.send({
-            success: status
-        })
+        res.status(200).send();
     }, req.params.class_id, req.body.SchoolboyId, req.body.ColumnId);//Параметры запроса
 };
