@@ -24,5 +24,5 @@ require("./backend/routes/v1/schoolboys.routes.js")(app);
 require("./backend/routes/v1/lessons.routes.js")(app);
 
 app.listen(port, () => {
-    console.log(`Сервер запущен на порту: ${port}.\nПолучите приложение по адресу \nhttp://localhost:${port}/`);
+    console.log(`Сервер запущен на порту: ${port}.\nПолучите приложение по адресу \nhttp://tatl-group.redw.me/ или если локально то http:/localhost:${port}/`);
 });
