@@ -24,6 +24,7 @@
 
 > 1. Импортируйте файл sql в свою БД *test-tatlgroup.sql* в MySQL
 > 2. Внести ваши конфигурации доступов к базе данных в файл */backend/config/**db.config.json***
+> 3. Исправить доступы на фронтенде в файле */frontend/src/test-tatlgroup-frontend/src/**api.config.json***
 
 Что бы сделать билд фронтенда:
 
