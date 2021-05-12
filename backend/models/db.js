@@ -1,5 +1,5 @@
 const mysql = require("mysql");
-const config = require("../config/db.config");
+const config = require("../../config/db.config");
 const connection = mysql.createPool(config);
 
 connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {

@@ -12,19 +12,22 @@
 
 Для запуска: 
 
->  1. Клонировать репозиторий 2 способа:
->>   - git clone --recursive https://github.com/westprophet/test-tatlgroup-backend.git что бы клонировать проект с модулями
->>   - git clone  https://github.com/westprophet/test-tatlgroup-backend.git что бы клонировать без модулей
+>  1. Клонировать репозиторий c модулями:
+>>   - git clone --recursive https://github.com/westprophet/test-tatlgroup-backend.git 
 >  2. Запустить команду ***npm i***
->  3. Запустить команду ***npm run start***
->  4. Перейти по ссылке: https://localhost:3049/
+>  3. Импортируйте файл sql в свою БД *test-tatlgroup.sql* в MySQL
+>  4. Внести ваши конфигурации доступов к базе данных в файл */backend/config/**db.config.json***
+>  5. Исправить доступы на фронтенде в файле */frontend/src/test-tatlgroup-frontend/src/**api.config.json***
+>  6. Запустить команду ***npm run start***
 
+>  4. Перейти по ссылке: https://localhost:3049/
 
 Что бы использовать свою базу данных:
 
 > 1. Импортируйте файл sql в свою БД *test-tatlgroup.sql* в MySQL
 > 2. Внести ваши конфигурации доступов к базе данных в файл */backend/config/**db.config.json***
 > 3. Исправить доступы на фронтенде в файле */frontend/src/test-tatlgroup-frontend/src/**api.config.json***
+
 
 Что бы сделать билд фронтенда:
 
